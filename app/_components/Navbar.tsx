@@ -2,9 +2,7 @@ type Props = {};
 
 export const Navbar = (props: Props) => {
   return (
-    <>
-      {/* <!-- ========== HEADER ========== --> */}
-      <header className="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-[#00AAFF] p-2 border-b border-gray-200">
+      <header className="flex flex-wrap sticky top-0 md:justify-start md:flex-nowrap z-50 w-full bg-[#00AAFF] p-2">
         <nav className="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center gap-x-1">
             <a
@@ -249,6 +247,5 @@ export const Navbar = (props: Props) => {
           {/* <!-- End Collapse --> */}
         </nav>
       </header>
-    </>
   );
 };
