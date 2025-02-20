@@ -40,7 +40,7 @@ const DrowpDownCheckList = ({
         aria-orientation="vertical"
         aria-labelledby="hs-dropdown-default"
       >
-        <ul className="max-w-sm flex flex-col max-h-52 overflow-y-scroll">
+        <ul className="max-w-sm flex flex-col max-h-52 overflow-y-scroll relative">
           {dropDownList.map((item) => (
             <li
               key={item}

@@ -8,30 +8,34 @@ type Job = {
   employment_type: string;
   education_level: string;
   jasa: string;
-  bidang: string;
   posted_at: string;
-  description: string;
-  requirements: string[];
   salary_range: string;
-  benefits: string[];
   company_logo: string;
-  apply_link: string;
+  status: string;
 };
 
-const Card = ({ job }: { job: any }) => {
-  const { title, company, location, salary_range, posted_at } = job;
-  const status = 'dilihat'; //Ketika User Mengklik detail ataupun sudah melamar maka data akan diUpdate;
+const Card = ({ job }: { job: Job }) => {
+  const {
+    title,
+    company,
+    location,
+    posted_at,
+    salary_range,
+    company_logo,
+    status,
+  } = job;
 
   return (
     <div className="rounded-md shadow-md hover:ring-2 hover:shadow-lg transition-all hover:ring-primary border border-slate-200 flex overflow-hidden min-w-[20rem]">
       <div className="w-full">
         <div className="flex border-b border-slate-200">
-          <div className="h-20 w-20 relative">
+          <div className="h-20 w-20 flex">
             <Image
               src="/images/KBI.jpeg"
-              alt="tes"
-              fill
-              className="object-cover bg-center"
+              alt={company}
+              width={350}
+              height={350}
+              className="object-cover grow"
             />
           </div>
           <div className="p-2">

@@ -1,5 +1,5 @@
+import getRelativeTime from '@/utils/getRelativeTime';
 import { NextResponse } from 'next/server';
-import responseData from '../../_data/fakteData';
 
 type Job = {
   id: number;
@@ -10,21 +10,39 @@ type Job = {
   employment_type: string;
   education_level: string;
   jasa: string;
-  bidang: string;
   posted_at: string;
-  description: string;
-  requirements: string[];
   salary_range: string;
-  benefits: string[];
   company_logo: string;
-  apply_link: string;
+  status: string;
 };
 
-export function GET() {
-  try {
-    const data = responseData;
+export async function GET() {
+  const KBI_URL = process.env.KBI_API;
 
-    return NextResponse.json(data.slice(0, 15));
+  try {
+    const res = await fetch(`${KBI_URL}`, { cache: 'no-cache' });
+
+    if (!res.ok) {
+      throw new Error('Failed to fetch data');
+    }
+
+    const data = await res.json();
+    const filterData = data.map((job: Job) => ({
+      id: job.id,
+      slug: job.slug,
+      title: job.title,
+      company: job.company,
+      location: job.location,
+      employment_type: job.employment_type,
+      education_level: job.education_level,
+      jasa: job.jasa,
+      posted_at: getRelativeTime(job.posted_at),
+      salary_range: job.salary_range,
+      company_logo: job.company_logo,
+      status: job.status,
+    }));
+
+    return NextResponse.json(filterData.slice(0, 10));
   } catch (error) {
     console.error('Error fetching API:', error);
     return NextResponse.json(
