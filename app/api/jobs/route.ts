@@ -22,19 +22,9 @@ type Job = {
 
 export function GET() {
   try {
-    const data = responseData?.map((data: Job) => ({
-      id: data.id,
-      jasa: data.jasa,
-    }));
+    const data = responseData;
 
-    const filterData = data?.filter(
-      (item, index, self) =>
-        index === self.findIndex((t) => t.jasa === item.jasa)
-    );
-
-    const result = filterData?.map((data) => data.jasa);
-
-    return NextResponse.json(result);
+    return NextResponse.json(data.slice(0, 15));
   } catch (error) {
     console.error('Error fetching API:', error);
     return NextResponse.json(
