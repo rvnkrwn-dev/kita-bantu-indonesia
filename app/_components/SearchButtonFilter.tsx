@@ -21,9 +21,11 @@ const jasaCategories: string[] = [
 const SearchButtonFilter = ({
   filter,
   setFilter,
+  setSearch,
 }: {
   filter: any;
   setFilter: any;
+  setSearch: any;
 }) => {
   const [data, setData] = useState<string[]>([]);
   useEffect(() => {
@@ -42,6 +44,7 @@ const SearchButtonFilter = ({
 
     getDataLocation();
   }, []);
+
   return (
     <div className="flex justify-center">
       <div className="relative lg:w-2/3 flex rounded-lg shadow-sm border border-slate-200">
@@ -50,6 +53,7 @@ const SearchButtonFilter = ({
           id="hs-trailing-button-add-on-with-icon-and-button"
           name="hs-trailing-button-add-on-with-icon-and-button"
           className="py-3 px-4 ps-11 block w-full border-gray-200 rounded-s-lg text-sm disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600 focus:outline-none "
+          onChange={(e) => setSearch(() => e.target.value)}
         />
         <div className="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-4">
           <svg

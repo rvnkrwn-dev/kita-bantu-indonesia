@@ -44,7 +44,7 @@ export async function GET() {
       experience: job.experience,
     }));
 
-    return NextResponse.json(filterData.slice(0, 10));
+    return NextResponse.json(filterData);
   } catch (error) {
     console.error('Error fetching API:', error);
     return NextResponse.json(

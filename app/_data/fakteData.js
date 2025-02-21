@@ -23,7 +23,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangbangunan.png",
     "apply_link": "https://example.com/jobs/tukang-bangunan",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 2,
@@ -49,7 +50,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-cleaningservice.png",
     "apply_link": "https://example.com/jobs/cleaning-service",
-    "status": ""
+    "status": "",
+    "experience": "Fresh Graduate"
   },
   {
     "id": 3,
@@ -75,7 +77,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-gurungaji.png",
     "apply_link": "https://example.com/jobs/guru-ngaji",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 4,
@@ -101,7 +104,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-gurubimbel.png",
     "apply_link": "https://example.com/jobs/guru-bimbel",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 5,
@@ -127,7 +131,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-bidan.png",
     "apply_link": "https://example.com/jobs/bidan-praktek",
-    "status": ""
+    "status": "",
+    "experience": "3 - 5 tahun"
   },
   {
     "id": 6,
@@ -153,7 +158,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-perawat.png",
     "apply_link": "https://example.com/jobs/perawat-rumah",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 7,
@@ -178,7 +184,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-fotografer.png",
     "apply_link": "https://example.com/jobs/fotografer-freelance",
-    "status": ""
+    "status": "",
+    "experience": "Tidak Berpengalaman"
   },
   {
     "id": 8,
@@ -204,7 +211,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangkebun.png",
     "apply_link": "https://example.com/jobs/tukang-kebun",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 9,
@@ -229,7 +237,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penjahit.png",
     "apply_link": "https://example.com/jobs/penjahit-pakaian",
-    "status": ""
+    "status": "",
+    "experience": "3 - 5 tahun"
   },
   {
     "id": 10,
@@ -255,7 +264,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-montirmotor.png",
     "apply_link": "https://example.com/jobs/montir-motor",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 11,
@@ -281,7 +291,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukanglistrik.png",
     "apply_link": "https://example.com/jobs/tukang-listrik",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 12,
@@ -307,7 +318,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-babysitter.png",
     "apply_link": "https://example.com/jobs/babysitter",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 13,
@@ -319,7 +331,7 @@ export default [
     "education_level": "SMP",
     "jasa": "Jasa Rumah Tangga",
     "bidang": "Asisten Rumah",
-    "posted_at": "2025-02-22T20:00:00Z",
+    "posted_at": "2025-02-21T20:00:00Z",
     "description": "Kami mencari pembantu rumah tangga untuk membersihkan rumah dan memasak.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -333,7 +345,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-pembanturumahtangga.png",
     "apply_link": "https://example.com/jobs/pembantu-rumah-tangga",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 14,
@@ -345,7 +358,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Transportasi dan Logistik",
     "bidang": "Driver Harian",
-    "posted_at": "2025-02-23T21:00:00Z",
+    "posted_at": "2025-02-20T21:00:00Z",
     "description": "Kami membutuhkan supir pribadi untuk mengantar jemput keluarga.",
     "requirements": [
       "Memiliki SIM A/B1",
@@ -359,7 +372,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-supirpribadi.png",
     "apply_link": "https://example.com/jobs/supir-pribadi",
-    "status": ""
+    "status": "",
+    "experience": "3 - 5 tahun"
   },
   {
     "id": 15,
@@ -371,7 +385,7 @@ export default [
     "education_level": "SMP",
     "jasa": "Jasa Kuliner",
     "bidang": "Penjaga Warung",
-    "posted_at": "2025-02-24T22:00:00Z",
+    "posted_at": "2025-02-20T22:00:00Z",
     "description": "Kami mencari penjaga warung untuk melayani pelanggan.",
     "requirements": [
       "Pengalaman minimal 6 bulan",
@@ -385,7 +399,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penjagawarung.png",
     "apply_link": "https://example.com/jobs/penjaga-warung",
-    "status": ""
+    "status": "",
+    "experience": "Fresh Graduate"
   },
   {
     "id": 16,
@@ -397,7 +412,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Perbaikan",
     "bidang": "Tukang Saluran Air",
-    "posted_at": "2025-02-25T23:00:00Z",
+    "posted_at": "2025-02-20T23:00:00Z",
     "description": "Kami membutuhkan tukang saluran air untuk memperbaiki pipa bocor.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -411,7 +426,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangsaluranair.png",
     "apply_link": "https://example.com/jobs/tukang-saluran-air",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 17,
@@ -436,7 +452,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penjualkakilima.png",
     "apply_link": "https://example.com/jobs/penjual-kaki-lima",
-    "status": ""
+    "status": "",
+    "experience": "Fresh Graduate"
   },
   {
     "id": 18,
@@ -462,7 +479,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penjagatoko.png",
     "apply_link": "https://example.com/jobs/penjaga-toko",
-    "status": ""
+    "status": "",
+    "experience": "Fresh Graduate"
   },
   {
     "id": 19,
@@ -488,7 +506,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangcat.png",
     "apply_link": "https://example.com/jobs/tukang-cat",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 20,
@@ -500,7 +519,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Transportasi dan Logistik",
     "bidang": "Kurir",
-    "posted_at": "2025-03-01T03:00:00Z",
+    "posted_at": "2025-02-01T03:00:00Z",
     "description": "Kami membutuhkan kurir barang untuk mengantar paket ke pelanggan.",
     "requirements": [
       "Memiliki SIM C",
@@ -514,7 +533,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-kurirbarang.png",
     "apply_link": "https://example.com/jobs/kurir-barang",
-    "status": ""
+    "status": "",
+    "experience": "Fresh Graduate"
   },
   {
     "id": 21,
@@ -526,7 +546,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Kecantikan",
     "bidang": "Makeup Artist",
-    "posted_at": "2025-03-02T04:00:00Z",
+    "posted_at": "2025-02-02T04:00:00Z",
     "description": "Kami mencari makeup artist untuk acara pernikahan dan wisuda.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -539,7 +559,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-makeupartist.png",
     "apply_link": "https://example.com/jobs/makeup-artist",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 22,
@@ -551,7 +572,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Kecantikan",
     "bidang": "Hair Stylist",
-    "posted_at": "2025-03-03T05:00:00Z",
+    "posted_at": "2025-02-03T05:00:00Z",
     "description": "Kami membutuhkan hair stylist untuk salon kecantikan.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -565,7 +586,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-hairstylist.png",
     "apply_link": "https://example.com/jobs/hair-stylist",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 23,
@@ -577,7 +599,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Kecantikan",
     "bidang": "Spa Therapist",
-    "posted_at": "2025-03-04T06:00:00Z",
+    "posted_at": "2025-02-04T06:00:00Z",
     "description": "Kami mencari spa therapist untuk memberikan layanan pijat dan relaksasi.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -591,7 +613,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-spatherapist.png",
     "apply_link": "https://example.com/jobs/spa-therapist",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 24,
@@ -603,7 +626,7 @@ export default [
     "education_level": "SMP",
     "jasa": "Jasa Kebersihan",
     "bidang": "Laundry Service",
-    "posted_at": "2025-03-05T07:00:00Z",
+    "posted_at": "2025-02-05T07:00:00Z",
     "description": "Kami membutuhkan tenaga laundry untuk mencuci dan menyetrika pakaian.",
     "requirements": [
       "Pengalaman minimal 6 bulan",
@@ -617,7 +640,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-laundryservice.png",
     "apply_link": "https://example.com/jobs/laundry-service",
-    "status": ""
+    "status": "",
+    "experience": "Fresh Graduate"
   },
   {
     "id": 25,
@@ -629,7 +653,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Event dan Hiburan",
     "bidang": "Event Organizer",
-    "posted_at": "2025-03-06T08:00:00Z",
+    "posted_at": "2025-02-06T08:00:00Z",
     "description": "Kami mencari event organizer untuk mengatur acara pernikahan dan ulang tahun.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -642,7 +666,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-eventorganizer.png",
     "apply_link": "https://example.com/jobs/event-organizer",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 26,
@@ -654,7 +679,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Event dan Hiburan",
     "bidang": "MC",
-    "posted_at": "2025-03-07T09:00:00Z",
+    "posted_at": "2025-02-07T09:00:00Z",
     "description": "Kami mencari MC untuk memandu acara pernikahan dan seminar.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -667,7 +692,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-mc.png",
     "apply_link": "https://example.com/jobs/mc-acara",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 27,
@@ -679,7 +705,7 @@ export default [
     "education_level": "S1",
     "jasa": "Jasa Konsultasi",
     "bidang": "Konsultan Bisnis",
-    "posted_at": "2025-03-08T10:00:00Z",
+    "posted_at": "2025-02-08T10:00:00Z",
     "description": "Kami membutuhkan konsultan bisnis untuk membantu pengembangan usaha.",
     "requirements": [
       "Pengalaman minimal 2 tahun",
@@ -692,7 +718,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-konsultanbisnis.png",
     "apply_link": "https://example.com/jobs/konsultan-bisnis",
-    "status": ""
+    "status": "",
+    "experience": "3 - 5 tahun"
   },
   {
     "id": 28,
@@ -704,7 +731,7 @@ export default [
     "education_level": "S1",
     "jasa": "Jasa Konsultasi",
     "bidang": "Konsultan Keuangan",
-    "posted_at": "2025-03-09T11:00:00Z",
+    "posted_at": "2025-02-09T11:00:00Z",
     "description": "Kami mencari konsultan keuangan untuk membantu manajemen keuangan perusahaan.",
     "requirements": [
       "Pengalaman minimal 2 tahun",
@@ -717,7 +744,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-konsultankeuangan.png",
     "apply_link": "https://example.com/jobs/konsultan-keuangan",
-    "status": ""
+    "status": "",
+    "experience": "3 - 5 tahun"
   },
   {
     "id": 29,
@@ -729,7 +757,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Kreatif",
     "bidang": "Videografi",
-    "posted_at": "2025-03-10T12:00:00Z",
+    "posted_at": "2025-02-10T12:00:00Z",
     "description": "Kami mencari videografer untuk acara pernikahan dan dokumentasi.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -742,7 +770,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-videografi.png",
     "apply_link": "https://example.com/jobs/videografi",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 30,
@@ -754,7 +783,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Kreatif",
     "bidang": "Desain Grafis",
-    "posted_at": "2025-03-11T13:00:00Z",
+    "posted_at": "2025-02-11T13:00:00Z",
     "description": "Kami mencari desainer grafis untuk membuat logo dan materi promosi.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -767,7 +796,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-desaingrafis.png",
     "apply_link": "https://example.com/jobs/desain-grafis",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 31,
@@ -779,7 +809,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Pekerja Kasar",
     "bidang": "Tukang Kayu",
-    "posted_at": "2025-03-12T14:00:00Z",
+    "posted_at": "2025-02-12T14:00:00Z",
     "description": "Kami mencari tukang kayu untuk membuat furnitur dan perbaikan rumah.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -793,7 +823,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangkayu.png",
     "apply_link": "https://example.com/jobs/tukang-kayu",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 32,
@@ -805,7 +836,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Pekerja Kasar",
     "bidang": "Tukang Besi",
-    "posted_at": "2025-03-13T15:00:00Z",
+    "posted_at": "2025-02-13T15:00:00Z",
     "description": "Kami membutuhkan tukang besi untuk pembuatan pagar dan struktur logam.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -819,7 +850,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangbesi.png",
     "apply_link": "https://example.com/jobs/tukang-besi",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 33,
@@ -831,7 +863,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Pendidikan",
     "bidang": "Guru Musik",
-    "posted_at": "2025-03-14T16:00:00Z",
+    "posted_at": "2025-02-14T16:00:00Z",
     "description": "Kami mencari guru musik untuk mengajar piano dan gitar.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -845,7 +877,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-gurumusik.png",
     "apply_link": "https://example.com/jobs/guru-musik",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 34,
@@ -857,7 +890,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Perbaikan",
     "bidang": "Tukang Pipa",
-    "posted_at": "2025-03-15T17:00:00Z",
+    "posted_at": "2025-02-15T17:00:00Z",
     "description": "Kami membutuhkan tukang pipa untuk memperbaiki saluran air.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -871,7 +904,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangpipa.png",
     "apply_link": "https://example.com/jobs/tukang-pipa",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 35,
@@ -883,7 +917,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Kreatif",
     "bidang": "Penata Cahaya",
-    "posted_at": "2025-03-16T18:00:00Z",
+    "posted_at": "2025-02-16T18:00:00Z",
     "description": "Kami mencari penata cahaya untuk acara pertemuan dan konser.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -896,7 +930,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penatacahaya.png",
     "apply_link": "https://example.com/jobs/penata-cahaya",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 36,
@@ -908,7 +943,7 @@ export default [
     "education_level": "S1",
     "jasa": "Jasa Kreatif",
     "bidang": "Penulis Konten",
-    "posted_at": "2025-03-17T19:00:00Z",
+    "posted_at": "2025-02-17T19:00:00Z",
     "description": "Kami membutuhkan penulis konten untuk artikel dan blog.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -921,7 +956,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penuliskonten.png",
     "apply_link": "https://example.com/jobs/penulis-konten",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 37,
@@ -933,7 +969,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Pekerja Kasar",
     "bidang": "Tukang Taman",
-    "posted_at": "2025-03-18T20:00:00Z",
+    "posted_at": "2025-02-18T20:00:00Z",
     "description": "Kami membutuhkan tukang taman untuk merancang dan merawat taman.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -947,7 +983,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangtaman.png",
     "apply_link": "https://example.com/jobs/tukang-taman",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 38,
@@ -959,7 +996,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Perbaikan",
     "bidang": "Tukang Sumur",
-    "posted_at": "2025-03-19T21:00:00Z",
+    "posted_at": "2025-02-19T21:00:00Z",
     "description": "Kami membutuhkan tukang sumur untuk memperbaiki sumur bor.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -973,7 +1010,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangsumur.png",
     "apply_link": "https://example.com/jobs/tukang-sumur",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 39,
@@ -985,7 +1023,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Rumah Tangga",
     "bidang": "Penjaga Sekolah",
-    "posted_at": "2025-03-20T22:00:00Z",
+    "posted_at": "2025-02-20T22:00:00Z",
     "description": "Kami membutuhkan penjaga sekolah untuk menjaga keamanan.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -999,7 +1037,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penjagasekolah.png",
     "apply_link": "https://example.com/jobs/penjaga-sekolah",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 40,
@@ -1011,7 +1050,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Logistik",
     "bidang": "Penjaga Gudang",
-    "posted_at": "2025-03-21T23:00:00Z",
+    "posted_at": "2025-02-21T23:00:00Z",
     "description": "Kami membutuhkan penjaga gudang untuk mengatur stok barang.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -1025,7 +1064,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penjagagudang.png",
     "apply_link": "https://example.com/jobs/penjaga-gudang",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 41,
@@ -1037,7 +1077,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Penjahitan",
     "bidang": "Tukang Jahit Sarung",
-    "posted_at": "2025-03-22T00:00:00Z",
+    "posted_at": "2025-02-22T00:00:00Z",
     "description": "Kami membutuhkan tukang jahit sarung untuk produksi massal.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -1051,7 +1091,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangjahitsarung.png",
     "apply_link": "https://example.com/jobs/tukang-jahit-sarung",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 42,
@@ -1063,7 +1104,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Transportasi dan Logistik",
     "bidang": "Kurir Motor",
-    "posted_at": "2025-03-23T01:00:00Z",
+    "posted_at": "2025-02-16T01:00:00Z",
     "description": "Kami membutuhkan kurir motor untuk mengantar paket.",
     "requirements": [
       "Memiliki SIM C",
@@ -1077,7 +1118,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-kurirmotor.png",
     "apply_link": "https://example.com/jobs/kurir-motor",
-    "status": ""
+    "status": "",
+    "experience": "Fresh Graduate"
   },
   {
     "id": 43,
@@ -1089,7 +1131,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Pekerja Kasar",
     "bidang": "Tukang Paving",
-    "posted_at": "2025-03-24T02:00:00Z",
+    "posted_at": "2025-02-14T02:00:00Z",
     "description": "Kami membutuhkan tukang paving untuk pemasangan halaman.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -1103,7 +1145,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangpaving.png",
     "apply_link": "https://example.com/jobs/tukang-paving",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 44,
@@ -1115,7 +1158,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Perbaikan",
     "bidang": "Tukang Kaca",
-    "posted_at": "2025-03-25T03:00:00Z",
+    "posted_at": "2025-02-20T03:00:00Z",
     "description": "Kami membutuhkan tukang kaca untuk pemasangan jendela.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -1129,7 +1172,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangkaca.png",
     "apply_link": "https://example.com/jobs/tukang-kaca",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 45,
@@ -1141,7 +1185,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Kebersihan",
     "bidang": "Penjaga Kolam Renang",
-    "posted_at": "2025-03-26T04:00:00Z",
+    "posted_at": "2025-02-20T04:00:00Z",
     "description": "Kami membutuhkan penjaga kolam renang untuk perawatan rutin.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -1155,7 +1199,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penjagakolamrenang.png",
     "apply_link": "https://example.com/jobs/penjaga-kolam-renang",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 46,
@@ -1167,7 +1212,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Perbaikan",
     "bidang": "Tukang AC",
-    "posted_at": "2025-03-27T05:00:00Z",
+    "posted_at": "2025-02-20T05:00:00Z",
     "description": "Kami membutuhkan tukang AC untuk servis dan instalasi.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -1181,7 +1226,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukangac.png",
     "apply_link": "https://example.com/jobs/tukang-ac",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 47,
@@ -1193,7 +1239,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Transportasi dan Logistik",
     "bidang": "Penjaga Parkir",
-    "posted_at": "2025-03-28T06:00:00Z",
+    "posted_at": "2025-02-15T06:00:00Z",
     "description": "Kami membutuhkan penjaga parkir untuk area perkantoran.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -1207,7 +1253,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penjagaparkir.png",
     "apply_link": "https://example.com/jobs/penjaga-parkir",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 48,
@@ -1219,7 +1266,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Pekerja Kasar",
     "bidang": "Tukang Las",
-    "posted_at": "2025-03-29T07:00:00Z",
+    "posted_at": "2025-02-20T07:00:00Z",
     "description": "Kami membutuhkan tukang las untuk proyek konstruksi.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -1233,7 +1280,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukanglas.png",
     "apply_link": "https://example.com/jobs/tukang-las",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 49,
@@ -1245,7 +1293,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Pendidikan",
     "bidang": "Penjaga Perpustakaan",
-    "posted_at": "2025-03-30T08:00:00Z",
+    "posted_at": "2025-02-10T08:00:00Z",
     "description": "Kami membutuhkan penjaga perpustakaan untuk mengatur buku.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -1259,7 +1307,8 @@ export default [
     ],
     "company_logo": "https://example.com/logo-penjagaperpustakaan.png",
     "apply_link": "https://example.com/jobs/penjaga-perpustakaan",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   },
   {
     "id": 50,
@@ -1271,7 +1320,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Pekerja Kasar",
     "bidang": "Tukang Gergaji",
-    "posted_at": "2025-03-31T09:00:00Z",
+    "posted_at": "2025-02-11T09:00:00Z",
     "description": "Kami membutuhkan tukang gergaji untuk proyek kayu.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -1285,6 +1334,7 @@ export default [
     ],
     "company_logo": "https://example.com/logo-tukanggergaji.png",
     "apply_link": "https://example.com/jobs/tukang-gergaji",
-    "status": ""
+    "status": "",
+    "experience": "1 - 3 tahun"
   }
 ]

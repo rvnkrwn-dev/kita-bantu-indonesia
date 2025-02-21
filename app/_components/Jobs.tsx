@@ -22,6 +22,7 @@ type Job = {
 
 const Jobs = ({ Jobsdata }: { Jobsdata: Job[] }) => {
   const [data, setData] = useState<Job[]>(Jobsdata);
+  const [search, setSearch] = useState<string>('');
   const [filters, setFilters] = useState({
     jasa: [],
     location: [],
@@ -32,79 +33,93 @@ const Jobs = ({ Jobsdata }: { Jobsdata: Job[] }) => {
   });
 
   useEffect(() => {
+    const dataBySearch = data.filter((item) =>
+      item.title.toLowerCase().includes(search.toLowerCase())
+    );
+    setData(data.length > 3 ? dataBySearch : Jobsdata);
+  }, [search]);
+
+  useEffect(() => {
+    let filteredData = Jobsdata;
+
     async function fetchLocations() {
       if (filters.location.length === 0) return;
 
       const queryString = filters.location
         .map((prov) => `provinces=${prov}`)
         .join('&');
+
       try {
         const res = await fetch(
           `http://localhost:3000/api/locations?${queryString}`
         );
         const dataLocation = await res.json();
-        // console.log(dataLocation);
-        const filterLocation = data.filter((job: any) => {
+
+        const filterLocation = filteredData.filter((job: any) => {
           const locationWords = job.location
             .split(',')[0]
             .toLowerCase()
             .split(' ');
 
-          const match = dataLocation.some((s: any) => {
+          return dataLocation.some((s: any) => {
             const sLower = s.toLowerCase();
             return locationWords.some((word: any) => sLower.includes(word));
           });
-          return match;
         });
-        setData(filterLocation);
+
+        filteredData = filterLocation;
       } catch (error) {
         console.error('Error fetching locations:', error);
       }
     }
 
-    fetchLocations();
-  }, [filters.location]);
+    async function applyFilters() {
+      await fetchLocations();
 
-  useEffect(() => {
-    let filteredData = Jobsdata;
+      if (filters.jasa.length > 0) {
+        filteredData = filteredData.filter((job: any) =>
+          job.jasa.includes(filters.jasa)
+        );
+      }
+      if (filters.posted_at.length > 0) {
+        filteredData = filteredData.filter((job: any) =>
+          filters.posted_at.some((item: any) =>
+            item.includes(job.posted_at.filterTime)
+          )
+        );
+      }
+      if (filters.employment_type.length > 0) {
+        filteredData = filteredData.filter((job: any) =>
+          job.employment_type.includes(filters.employment_type)
+        );
+      }
+      if (filters.experience.length > 0) {
+        filteredData = filteredData.filter((job: any) =>
+          job.experience.includes(filters.experience)
+        );
+      }
+      if (filters.education_level.length > 0) {
+        filteredData = filteredData.filter((job) =>
+          filters.education_level.some(
+            (item: any) =>
+              item.toLowerCase() === job.education_level.toLowerCase()
+          )
+        );
+      }
 
-    if (filters.jasa.length > 0) {
-      filteredData = filteredData.filter((job: any) =>
-        job.jasa.includes(filters.jasa)
-      );
-    }
-    if (filters.posted_at.length > 0) {
-      filteredData = filteredData.filter((job: any) =>
-        filters.posted_at.some((item: any) =>
-          item.includes(job.posted_at.filterTime)
-        )
-      );
-    }
-    if (filters.employment_type.length > 0) {
-      filteredData = filteredData.filter((job: any) =>
-        job.employment_type.includes(filters.employment_type)
-      );
-    }
-    if (filters.experience.length > 0) {
-      filteredData = filteredData.filter((job: any) =>
-        job.experience.includes(filters.experience)
-      );
-    }
-    if (filters.education_level.length > 0) {
-      filteredData = filteredData.filter((job) =>
-        filters.education_level.some(
-          (item: any) =>
-            item.toLowerCase() === job.education_level.toLowerCase()
-        )
-      );
+      setData(filteredData);
     }
 
-    setData(filteredData);
+    applyFilters();
   }, [filters, Jobsdata]);
 
   return (
     <div className="px-10 py-12 min-h-dvh">
-      <SearchButtonFilter filter={filters} setFilter={setFilters} />
+      <SearchButtonFilter
+        filter={filters}
+        setFilter={setFilters}
+        setSearch={setSearch}
+      />
       <Filter filter={filters} setFilter={setFilters} />
       {data.length > 0 ? (
         <JobList jobs={data} />
