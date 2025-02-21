@@ -1,4 +1,6 @@
+import { Suspense } from 'react';
 import Jobs from '../_components/Jobs';
+import Loading from '../loading';
 
 const page = async () => {
   const res = await fetch('http://localhost:3000/api/jobs', {
@@ -8,7 +10,9 @@ const page = async () => {
 
   return (
     <>
-      <Jobs Jobsdata={JobsData} />
+      <Suspense fallback={<Loading />}>
+        <Jobs Jobsdata={JobsData} />
+      </Suspense>
     </>
   );
 };

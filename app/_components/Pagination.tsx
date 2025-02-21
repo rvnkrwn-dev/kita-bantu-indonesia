@@ -3,7 +3,7 @@ import React from 'react';
 const Pagination = ({ totalPages, currentPage, setCurrentPage }: any) => {
   return (
     <nav
-      className="flex items-center justify-center gap-x-4 pt-12 -translate-x-5"
+      className="flex items-center justify-center gap-x-4 pt-12 md:-translate-x-5"
       aria-label="Pagination"
     >
       <button

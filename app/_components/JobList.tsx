@@ -16,10 +16,10 @@ type Job = {
   status: string;
 };
 
-const JobList = ({ jobs }: { jobs: Job[] }) => {
+const JobList = ({ jobs, m = 'mt-5' }: { jobs: Job[]; m?: string }) => {
   return (
-    <div className="w-full flex flex-wrap gap-5 mt-5 justify-center">
-      {jobs.map((job) => (
+    <div className={`${m} w-full flex flex-wrap gap-5 justify-center`}>
+      {jobs?.map((job) => (
         <Card key={job.id} job={job} />
       ))}
     </div>

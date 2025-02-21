@@ -1,4 +1,10 @@
-import { MapPin, Banknote, CalendarDays, Bookmark } from 'lucide-react';
+import {
+  MapPin,
+  Banknote,
+  CalendarDays,
+  Bookmark,
+  Building2,
+} from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -30,6 +36,7 @@ const Card = ({ job }: { job: Job }) => {
 
   return (
     <Link
+      key={id}
       href={`/jobs/${id}`}
       className="rounded-md shadow-md hover:ring-2 hover:shadow-lg transition-all hover:ring-primary border border-slate-200 flex overflow-hidden min-w-[20rem]"
     >
@@ -46,7 +53,10 @@ const Card = ({ job }: { job: Job }) => {
           </div>
           <div className="p-2">
             <h2 className="text-lg font-semibold text-primary">{title}</h2>
-            <h3 className="text-base text-black">{company}</h3>
+            <div className="flex gap-1 items-center">
+              <Building2 size="15" className="text-slate-600" />
+              <h3 className="text-base text-slate-800">{company}</h3>
+            </div>
           </div>
         </div>
         <div className="text-sm text-slate-700 p-2">
