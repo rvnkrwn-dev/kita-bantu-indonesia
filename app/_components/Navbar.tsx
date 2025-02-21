@@ -164,8 +164,8 @@ export const Navbar = (props: Props) => {
                                         className="p-2 flex items-center text-sm font-normal text-gray-50 hover:bg-gray-500/20 rounded-lg focus:outline-none focus:bg-gray-500/20"
                                         href="/jobs"
                                     >
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
-                                             xmlns="http://www.w3.org/2000/svg"
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
                                              width="24"
                                              height="24"
                                              viewBox="0 0 24 24"
