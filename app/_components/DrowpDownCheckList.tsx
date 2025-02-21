@@ -2,11 +2,26 @@ const DrowpDownCheckList = ({
   dropDownName,
   dropDownList,
   shadow,
+  category,
+  filter,
+  setFilter,
 }: {
   dropDownName: string;
   dropDownList: string[];
   shadow?: string;
+  category: string;
+  filter: any;
+  setFilter: any;
 }) => {
+  const handleFilterChange = (category: string, value: string) => {
+    setFilter((prev: any) => ({
+      ...prev,
+      [category]: prev[category].includes(value)
+        ? prev[category].filter((item: any) => item !== value) // Uncheck: remove from array
+        : [...prev[category], value], // Check: add to array
+    }));
+  };
+
   return (
     <div className="hs-dropdown [--auto-close:inside]">
       <button
@@ -41,10 +56,10 @@ const DrowpDownCheckList = ({
         aria-labelledby="hs-dropdown-default"
       >
         <ul className="max-w-sm flex flex-col max-h-52 overflow-y-scroll relative">
-          {dropDownList.map((item) => (
+          {dropDownList?.map((item) => (
             <li
               key={item}
-              className="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700 dark:text-white "
+              className="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-neutral-800 dark:border-neutral-700 dark:text-white"
             >
               <div className="relative flex items-start w-full">
                 <div className="flex items-center h-5">
@@ -53,6 +68,8 @@ const DrowpDownCheckList = ({
                     name="hs-list-group-item-checkbox-1"
                     type="checkbox"
                     className="border-gray-200 rounded disabled:opacity-50 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                    value={filter}
+                    onChange={() => handleFilterChange(category, item)}
                   />
                 </div>
                 <label

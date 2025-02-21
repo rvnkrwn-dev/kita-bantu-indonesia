@@ -1,4 +1,4 @@
-import React from 'react';
+'use client';
 import Card from './Card';
 
 type Job = {
@@ -10,7 +10,7 @@ type Job = {
   employment_type: string;
   education_level: string;
   jasa: string;
-  posted_at: string;
+  posted_at: { displayTime: string; filterTime: string };
   salary_range: string;
   company_logo: string;
   status: string;

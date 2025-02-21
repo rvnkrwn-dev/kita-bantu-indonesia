@@ -1,7 +1,5 @@
 import DrowpDownCheckList from './DrowpDownCheckList';
 
-type Props = {};
-
 const tanggalPostingCategories = [
   '24 jam terakhir',
   'Minggu lalu',
@@ -11,8 +9,8 @@ const tanggalPostingCategories = [
 const TingkatPendidikanCategories = [
   'SD',
   'SMP',
-  'SMA/SMK/MA',
-  'Diploma (D1 - D2)',
+  'SMA/SMK',
+  'Diploma (D1 - D4)',
   'Sarjana (S1)',
   'Magister (S2)',
   'Doktor (S3)',
@@ -34,7 +32,7 @@ const tipePekerjaanCategories = [
   'Penuh Waktu',
 ];
 
-const Filter = (props: Props) => {
+const Filter = ({ filter, setFilter }: { filter: any; setFilter: any }) => {
   return (
     <div className="w-full mt-5 flex flex-wrap justify-center items-center gap-2 z-0">
       <DrowpDownCheckList
@@ -42,24 +40,36 @@ const Filter = (props: Props) => {
         dropDownName="Tanggal Posting"
         shadow="shadow-sm rounded-lg border border-slate-200"
         dropDownList={tanggalPostingCategories}
+        category="posted_at"
+        filter={filter}
+        setFilter={setFilter}
       />
       <DrowpDownCheckList
         key="Tingkat Pendidikan"
         dropDownName="Tingkat Pendidikan"
         shadow="shadow-sm rounded-lg border border-slate-200"
         dropDownList={TingkatPendidikanCategories}
+        category="education_level"
+        filter={filter}
+        setFilter={setFilter}
       />
       <DrowpDownCheckList
         key="Tingkat Pengalaman"
         dropDownName="Tingkat Pengalaman"
         shadow="shadow-sm rounded-lg border border-slate-200"
         dropDownList={tingkatPengalamanCategories}
+        category="experience"
+        filter={filter}
+        setFilter={setFilter}
       />
       <DrowpDownCheckList
         key="Tipe Pekerjaan"
         dropDownName="Tipe Pekerjaan"
         shadow="shadow-sm rounded-lg border border-slate-200"
         dropDownList={tipePekerjaanCategories}
+        category="employment_type"
+        filter={filter}
+        setFilter={setFilter}
       />
     </div>
   );

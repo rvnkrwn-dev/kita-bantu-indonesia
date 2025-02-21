@@ -14,13 +14,14 @@ type Job = {
   salary_range: string;
   company_logo: string;
   status: string;
+  experience: string;
 };
 
 export async function GET() {
   const KBI_URL = process.env.KBI_API;
 
   try {
-    const res = await fetch(`${KBI_URL}`, { cache: 'no-cache' });
+    const res = await fetch(`${KBI_URL}`, { cache: 'no-store' });
 
     if (!res.ok) {
       throw new Error('Failed to fetch data');
@@ -40,6 +41,7 @@ export async function GET() {
       salary_range: job.salary_range,
       company_logo: job.company_logo,
       status: job.status,
+      experience: job.experience,
     }));
 
     return NextResponse.json(filterData.slice(0, 10));

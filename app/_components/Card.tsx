@@ -8,7 +8,7 @@ type Job = {
   employment_type: string;
   education_level: string;
   jasa: string;
-  posted_at: string;
+  posted_at: { displayTime: string };
   salary_range: string;
   company_logo: string;
   status: string;
@@ -71,7 +71,7 @@ const Card = ({ job }: { job: Job }) => {
         </div>
         <div className="flex justify-between text-sm items-center text-slate-700 p-2">
           <div className="flex gap-1 items-center">
-            <p>{posted_at}</p>
+            <p>{posted_at.displayTime}</p>
             <p className="text-xs text-slate-800">. {status}</p>
           </div>
           <p>

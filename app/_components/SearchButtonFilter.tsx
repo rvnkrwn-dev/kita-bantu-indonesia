@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import DrowpDownCheckList from './DrowpDownCheckList';
 
 const jasaCategories: string[] = [
@@ -17,7 +18,30 @@ const jasaCategories: string[] = [
   'Jasa Konsultasi',
 ];
 
-const SearchButtonFilter = () => {
+const SearchButtonFilter = ({
+  filter,
+  setFilter,
+}: {
+  filter: any;
+  setFilter: any;
+}) => {
+  const [data, setData] = useState<string[]>([]);
+  useEffect(() => {
+    async function getDataLocation() {
+      try {
+        const res = await fetch(
+          'https://api-region-indonesia.vercel.app/api/provinces'
+        );
+        if (!res) return console.log('something wrong');
+        const dataLocation = await res.json();
+        setData(dataLocation.map(({ name }: { name: string }) => name));
+      } catch (error) {
+        throw error;
+      }
+    }
+
+    getDataLocation();
+  }, []);
   return (
     <div className="flex justify-center">
       <div className="relative lg:w-2/3 flex rounded-lg shadow-sm border border-slate-200">
@@ -47,10 +71,16 @@ const SearchButtonFilter = () => {
         <DrowpDownCheckList
           dropDownName="Pilih Jasa"
           dropDownList={jasaCategories}
+          category="jasa"
+          filter={filter}
+          setFilter={setFilter}
         />
         <DrowpDownCheckList
           dropDownName="Pilih Lokasi"
-          dropDownList={jasaCategories}
+          dropDownList={data}
+          category="location"
+          filter={filter}
+          setFilter={setFilter}
         />
         <button
           type="button"
