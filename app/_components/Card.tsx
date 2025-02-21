@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 type Job = {
   id: number;
   slug: string;
@@ -16,7 +17,9 @@ type Job = {
 
 const Card = ({ job }: { job: Job }) => {
   const {
+    id,
     title,
+    slug,
     company,
     location,
     posted_at,
@@ -26,7 +29,10 @@ const Card = ({ job }: { job: Job }) => {
   } = job;
 
   return (
-    <div className="rounded-md shadow-md hover:ring-2 hover:shadow-lg transition-all hover:ring-primary border border-slate-200 flex overflow-hidden min-w-[20rem]">
+    <Link
+      href={`/jobs/${slug}?id=${id}`}
+      className="rounded-md shadow-md hover:ring-2 hover:shadow-lg transition-all hover:ring-primary border border-slate-200 flex overflow-hidden min-w-[20rem]"
+    >
       <div className="w-full">
         <div className="flex border-b border-slate-200">
           <div className="h-20 w-20 flex">
@@ -92,7 +98,7 @@ const Card = ({ job }: { job: Job }) => {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

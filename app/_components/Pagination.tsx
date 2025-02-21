@@ -1,15 +1,17 @@
 import React from 'react';
 
-type Props = {};
-
-const Pagination = (props: Props) => {
+const Pagination = ({ totalPages, currentPage, setCurrentPage }: any) => {
   return (
-    <nav className="flex items-center gap-x-1" aria-label="Pagination">
+    <nav
+      className="flex items-center justify-center gap-x-4 pt-12 -translate-x-5"
+      aria-label="Pagination"
+    >
       <button
         type="button"
-        className="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
+        className="min-h-[38px] min-w-[38px] py-2 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
         aria-label="Previous"
-        disabled=""
+        disabled={currentPage === 1}
+        onClick={() => setCurrentPage((prev: any) => Math.max(prev - 1, 1))}
       >
         <svg
           className="shrink-0 size-3.5"
@@ -27,31 +29,27 @@ const Pagination = (props: Props) => {
         </svg>
         <span>Previous</span>
       </button>
-      <div className="flex items-center gap-x-1">
-        <button
-          type="button"
-          className="min-h-[38px] min-w-[38px] flex justify-center items-center bg-gray-200 text-gray-800 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-600 dark:text-white dark:focus:bg-neutral-500"
-          aria-current="page"
-        >
-          1
-        </button>
-        <button
-          type="button"
-          className="min-h-[38px] min-w-[38px] flex justify-center items-center text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
-        >
-          2
-        </button>
-        <button
-          type="button"
-          className="min-h-[38px] min-w-[38px] flex justify-center items-center text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
-        >
-          3
-        </button>
+      <div className="flex items-center gap-x-3">
+        {Array.from({ length: totalPages }, (_, i) => (
+          <button
+            key={i + 1}
+            onClick={() => setCurrentPage(i + 1)}
+            className={`px-3 py-1 rounded ${
+              currentPage === i + 1 ? 'bg-blue-500 text-white' : 'bg-gray-200'
+            }`}
+          >
+            {i + 1}
+          </button>
+        ))}
       </div>
       <button
         type="button"
-        className="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
+        className="min-h-[38px] min-w-[38px] py-2 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
         aria-label="Next"
+        onClick={() =>
+          setCurrentPage((prev: any) => Math.min(prev + 1, totalPages))
+        }
+        disabled={currentPage === totalPages}
       >
         <span>Next</span>
         <svg

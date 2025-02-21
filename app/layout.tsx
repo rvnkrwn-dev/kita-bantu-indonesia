@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import PrelineScript from './_components/PrelineScript';
 import { Navbar } from './_components/Navbar';
+import { Footer } from './_components/Footer';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
       <PrelineScript />
     </html>

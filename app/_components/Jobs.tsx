@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import JobList from '../_components/JobList';
 import Filter from '../_components/Filter';
 import SearchButtonFilter from '../_components/SearchButtonFilter';
+import Pagination from './Pagination';
 
 type Job = {
   id: number;
@@ -19,7 +20,7 @@ type Job = {
   status: string;
   experience: string[];
 };
-
+const itemsPerPage = 20;
 const Jobs = ({ Jobsdata }: { Jobsdata: Job[] }) => {
   const [data, setData] = useState<Job[]>(Jobsdata);
   const [search, setSearch] = useState<string>('');
@@ -31,6 +32,16 @@ const Jobs = ({ Jobsdata }: { Jobsdata: Job[] }) => {
     experience: [],
     employment_type: [],
   });
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Hitung jumlah halaman
+  const totalPages = Math.ceil(data.length / itemsPerPage);
+
+  // Ambil data yang sesuai dengan halaman saat ini
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
 
   useEffect(() => {
     const dataBySearch = data.filter((item) =>
@@ -121,13 +132,18 @@ const Jobs = ({ Jobsdata }: { Jobsdata: Job[] }) => {
         setSearch={setSearch}
       />
       <Filter filter={filters} setFilter={setFilters} />
-      {data.length > 0 ? (
-        <JobList jobs={data} />
+      {currentItems.length > 0 ? (
+        <JobList jobs={currentItems} />
       ) : (
         <p className="text-center pt-12 font-semibold">
           Pekerjaan Tidak Di Temukan
         </p>
       )}
+      <Pagination
+        totalPages={totalPages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 export default [
   {
-    "id": 1,
+    "id": "1",
     "slug": "tukang-bangunan",
     "title": "Tukang Bangunan",
     "company": "Bangun Jaya",
@@ -27,7 +27,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 2,
+    "id": "2",
     "slug": "cleaning-service",
     "title": "Cleaning Service",
     "company": "Bersih Bersama",
@@ -54,7 +54,7 @@ export default [
     "experience": "Fresh Graduate"
   },
   {
-    "id": 3,
+    "id": "3",
     "slug": "guru-ngaji",
     "title": "Guru Ngaji",
     "company": "Pesantren Al-Ikhlas",
@@ -81,7 +81,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 4,
+    "id": "4",
     "slug": "guru-bimbel",
     "title": "Guru Bimbel",
     "company": "Cerdas Mandiri",
@@ -108,7 +108,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 5,
+    "id": "5",
     "slug": "bidan-praktek",
     "title": "Bidan Praktek",
     "company": "Klinik Sehat",
@@ -135,7 +135,7 @@ export default [
     "experience": "3 - 5 tahun"
   },
   {
-    "id": 6,
+    "id": "6",
     "slug": "perawat-rumah",
     "title": "Perawat Rumah",
     "company": "Care Home",
@@ -162,7 +162,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 7,
+    "id": "7",
     "slug": "fotografer-freelance",
     "title": "Fotografer Freelance",
     "company": "Foto Cemerlang",
@@ -188,7 +188,7 @@ export default [
     "experience": "Tidak Berpengalaman"
   },
   {
-    "id": 8,
+    "id": "8",
     "slug": "tukang-kebun",
     "title": "Tukang Kebun",
     "company": "Hijau Asri",
@@ -215,7 +215,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 9,
+    "id": "9",
     "slug": "penjahit-pakaian",
     "title": "Penjahit Pakaian",
     "company": "Jahit Rapi",
@@ -241,7 +241,7 @@ export default [
     "experience": "3 - 5 tahun"
   },
   {
-    "id": 10,
+    "id": "10",
     "slug": "montir-motor",
     "title": "Montir Motor",
     "company": "Bengkel Cepat",
@@ -268,7 +268,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 11,
+    "id": "11",
     "slug": "tukang-listrik",
     "title": "Tukang Listrik",
     "company": "Listrik Aman",
@@ -295,7 +295,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 12,
+    "id": "12",
     "slug": "babysitter",
     "title": "Babysitter",
     "company": "Baby Care",
@@ -322,7 +322,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 13,
+    "id": "13",
     "slug": "pembantu-rumah-tangga",
     "title": "Pembantu Rumah Tangga",
     "company": "Rumah Bersih",
@@ -349,7 +349,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 14,
+    "id": "14",
     "slug": "supir-pribadi",
     "title": "Supir Pribadi",
     "company": "Drive Safe",
@@ -376,7 +376,7 @@ export default [
     "experience": "3 - 5 tahun"
   },
   {
-    "id": 15,
+    "id": "15",
     "slug": "penjaga-warung",
     "title": "Penjaga Warung",
     "company": "Warung Sehat",
@@ -403,7 +403,7 @@ export default [
     "experience": "Fresh Graduate"
   },
   {
-    "id": 16,
+    "id": "16",
     "slug": "tukang-saluran-air",
     "title": "Tukang Saluran Air",
     "company": "Air Lancar",
@@ -430,7 +430,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 17,
+    "id": "17",
     "slug": "penjual-kaki-lima",
     "title": "Penjual Kaki Lima",
     "company": "Warung Goreng",
@@ -439,7 +439,7 @@ export default [
     "education_level": "SMP",
     "jasa": "Jasa Kuliner",
     "bidang": "Penjual Kaki Lima",
-    "posted_at": "2025-02-26T00:00:00Z",
+    "posted_at": "2025-02-5T00:00:00Z",
     "description": "Kami mencari penjual kaki lima untuk berjualan gorengan.",
     "requirements": [
       "Pengalaman minimal 6 bulan",
@@ -456,7 +456,7 @@ export default [
     "experience": "Fresh Graduate"
   },
   {
-    "id": 18,
+    "id": "18",
     "slug": "penjaga-toko",
     "title": "Penjaga Toko",
     "company": "Toko Bahagia",
@@ -465,7 +465,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Retail",
     "bidang": "Penjaga Toko",
-    "posted_at": "2025-02-27T01:00:00Z",
+    "posted_at": "2025-02-17T01:00:00Z",
     "description": "Kami membutuhkan penjaga toko untuk melayani pembeli.",
     "requirements": [
       "Pengalaman minimal 6 bulan",
@@ -483,7 +483,7 @@ export default [
     "experience": "Fresh Graduate"
   },
   {
-    "id": 19,
+    "id": "19",
     "slug": "tukang-cat",
     "title": "Tukang Cat",
     "company": "Cat Indah",
@@ -492,7 +492,7 @@ export default [
     "education_level": "SMA/SMK",
     "jasa": "Jasa Pekerja Kasar",
     "bidang": "Tukang Cat",
-    "posted_at": "2025-02-28T02:00:00Z",
+    "posted_at": "2025-02-18T02:00:00Z",
     "description": "Kami mencari tukang cat untuk mengecat rumah dan gedung.",
     "requirements": [
       "Pengalaman minimal 1 tahun",
@@ -510,7 +510,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 20,
+    "id": "20",
     "slug": "kurir-barang",
     "title": "Kurir Barang",
     "company": "Express Delivery",
@@ -537,7 +537,7 @@ export default [
     "experience": "Fresh Graduate"
   },
   {
-    "id": 21,
+    "id": "21",
     "slug": "makeup-artist",
     "title": "Makeup Artist",
     "company": "Beauty Studio",
@@ -563,7 +563,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 22,
+    "id": "22",
     "slug": "hair-stylist",
     "title": "Hair Stylist",
     "company": "Salon Glamour",
@@ -590,7 +590,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 23,
+    "id": "23",
     "slug": "spa-therapist",
     "title": "Spa Therapist",
     "company": "Relax Spa",
@@ -617,7 +617,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 24,
+    "id": "24",
     "slug": "laundry-service",
     "title": "Laundry Service",
     "company": "Cuci Bersih",
@@ -644,7 +644,7 @@ export default [
     "experience": "Fresh Graduate"
   },
   {
-    "id": 25,
+    "id": "25",
     "slug": "event-organizer",
     "title": "Event Organizer",
     "company": "Event Pro",
@@ -670,7 +670,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 26,
+    "id": "26",
     "slug": "mc-acara",
     "title": "MC (Master of Ceremony)",
     "company": "Voice Talent",
@@ -696,7 +696,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 27,
+    "id": "27",
     "slug": "konsultan-bisnis",
     "title": "Konsultan Bisnis",
     "company": "Biz Consult",
@@ -722,7 +722,7 @@ export default [
     "experience": "3 - 5 tahun"
   },
   {
-    "id": 28,
+    "id": "28",
     "slug": "konsultan-keuangan",
     "title": "Konsultan Keuangan",
     "company": "Finance Pro",
@@ -748,7 +748,7 @@ export default [
     "experience": "3 - 5 tahun"
   },
   {
-    "id": 29,
+    "id": "29",
     "slug": "videografi",
     "title": "Videografi",
     "company": "Video Vision",
@@ -774,7 +774,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 30,
+    "id": "30",
     "slug": "desain-grafis",
     "title": "Desain Grafis",
     "company": "Creative Design",
@@ -800,7 +800,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 31,
+    "id": "31",
     "slug": "tukang-kayu",
     "title": "Tukang Kayu",
     "company": "Kayu Indah",
@@ -827,7 +827,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 32,
+    "id": "32",
     "slug": "tukang-besi",
     "title": "Tukang Besi",
     "company": "Besi Kuat",
@@ -854,7 +854,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 33,
+    "id": "33",
     "slug": "guru-musik",
     "title": "Guru Musik",
     "company": "Musik Cerdas",
@@ -881,7 +881,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 34,
+    "id": "34",
     "slug": "tukang-pipa",
     "title": "Tukang Pipa",
     "company": "Pipa Lancar",
@@ -908,7 +908,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 35,
+    "id": "35",
     "slug": "penata-cahaya",
     "title": "Penata Cahaya",
     "company": "Light Studio",
@@ -934,7 +934,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 36,
+    "id": "36",
     "slug": "penulis-konten",
     "title": "Penulis Konten",
     "company": "Content Pro",
@@ -960,7 +960,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 37,
+    "id": "37",
     "slug": "tukang-taman",
     "title": "Tukang Taman",
     "company": "Taman Indah",
@@ -987,7 +987,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 38,
+    "id": "38",
     "slug": "tukang-sumur",
     "title": "Tukang Sumur",
     "company": "Sumur Bersih",
@@ -1014,7 +1014,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 39,
+    "id": "39",
     "slug": "penjaga-sekolah",
     "title": "Penjaga Sekolah",
     "company": "Sekolah Bahagia",
@@ -1041,7 +1041,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 40,
+    "id": "40",
     "slug": "penjaga-gudang",
     "title": "Penjaga Gudang",
     "company": "Gudang Aman",
@@ -1068,7 +1068,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 41,
+    "id": "41",
     "slug": "tukang-jahit-sarung",
     "title": "Tukang Jahit Sarung",
     "company": "Sarung Rapi",
@@ -1095,7 +1095,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 42,
+    "id": "42",
     "slug": "kurir-motor",
     "title": "Kurir Motor",
     "company": "Motor Express",
@@ -1122,7 +1122,7 @@ export default [
     "experience": "Fresh Graduate"
   },
   {
-    "id": 43,
+    "id": "43",
     "slug": "tukang-paving",
     "title": "Tukang Paving",
     "company": "Paving Indah",
@@ -1149,7 +1149,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 44,
+    "id": "44",
     "slug": "tukang-kaca",
     "title": "Tukang Kaca",
     "company": "Kaca Jernih",
@@ -1176,7 +1176,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 45,
+    "id": "45",
     "slug": "penjaga-kolam-renang",
     "title": "Penjaga Kolam Renang",
     "company": "Kolam Sehat",
@@ -1203,7 +1203,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 46,
+    "id": "46",
     "slug": "tukang-ac",
     "title": "Tukang AC",
     "company": "AC Dingin",
@@ -1230,7 +1230,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 47,
+    "id": "47",
     "slug": "penjaga-parkir",
     "title": "Penjaga Parkir",
     "company": "Parkir Aman",
@@ -1257,7 +1257,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 48,
+    "id": "48",
     "slug": "tukang-las",
     "title": "Tukang Las",
     "company": "Las Kuat",
@@ -1284,7 +1284,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 49,
+    "id": "49",
     "slug": "penjaga-perpustakaan",
     "title": "Penjaga Perpustakaan",
     "company": "Perpustakaan Ilmu",
@@ -1311,7 +1311,7 @@ export default [
     "experience": "1 - 3 tahun"
   },
   {
-    "id": 50,
+    "id": "50",
     "slug": "tukang-gergaji",
     "title": "Tukang Gergaji",
     "company": "Gergaji Presisi",
