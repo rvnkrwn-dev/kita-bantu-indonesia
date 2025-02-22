@@ -3,9 +3,12 @@ import Jobs from '../_components/Jobs';
 import Loading from '../loading';
 
 const page = async () => {
-  const res = await fetch('http://localhost:3000/api/jobs', {
-    next: { revalidate: 10 },
-  });
+  const res = await fetch(
+    'https://kita-bantu-indonesia-tmvc.vercel.app/api/jobs',
+    {
+      next: { revalidate: 10 },
+    }
+  );
   const JobsData = await res.json();
 
   return (

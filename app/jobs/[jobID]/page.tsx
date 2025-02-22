@@ -28,7 +28,7 @@ const page = async ({ params }: { params: { jobID: string } }) => {
   const data = await res.json();
 
   const resRecomendation = await fetch(
-    `http://localhost:3000/api/recomendations?rec=${data?.jasa}`
+    `https://kita-bantu-indonesia-tmvc.vercel.app/api/recomendations?rec=${data?.jasa}`
   );
   if (!resRecomendation.ok) {
     console.error('Gagal mengambil rekomendasi');
